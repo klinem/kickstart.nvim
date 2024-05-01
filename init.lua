@@ -154,6 +154,11 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -575,6 +580,9 @@ require('lazy').setup({
         tsserver = {},
         --
 
+        -- Go lang
+        gopls = {},
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
@@ -838,7 +846,7 @@ require('lazy').setup({
     build = ':TSUpdate',
     dependencies = { 'windwp/nvim-ts-autotag', 'nvim-treesitter/nvim-treesitter-context' },
     opts = {
-      ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'typescript', 'javascript', 'json' },
+      ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'typescript', 'javascript', 'json', 'go' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
