@@ -570,7 +570,7 @@ require('lazy').setup({
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -846,7 +846,7 @@ require('lazy').setup({
     build = ':TSUpdate',
     dependencies = { 'windwp/nvim-ts-autotag', 'nvim-treesitter/nvim-treesitter-context' },
     opts = {
-      ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'typescript', 'javascript', 'json', 'go' },
+      ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'typescript', 'javascript', 'json', 'go', 'rust' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
