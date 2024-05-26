@@ -583,6 +583,8 @@ require('lazy').setup({
         -- Go lang
         gopls = {},
 
+        csharp_ls = {},
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
@@ -614,6 +616,7 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'prettier',
         'eslint_d',
+        'csharpier',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -664,6 +667,7 @@ require('lazy').setup({
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
+        cs = { { 'csharpier' } },
         javascript = { { 'prettierd', 'prettier' } },
         javascriptreact = { { 'prettierd', 'prettier' } },
         typescript = { { 'prettierd', 'prettier' } },
