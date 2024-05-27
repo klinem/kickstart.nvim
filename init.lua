@@ -848,9 +848,9 @@ require('lazy').setup({
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    dependencies = { 'windwp/nvim-ts-autotag', 'nvim-treesitter/nvim-treesitter-context' },
+    dependencies = { 'windwp/nvim-ts-autotag', 'nvim-treesitter/nvim-treesitter-context', 'nvim-treesitter/nvim-treesitter-textobjects' },
     opts = {
-      ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'typescript', 'javascript', 'json', 'go', 'rust' },
+      ensure_installed = { 'bash', 'c', 'c_sharp', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'typescript', 'javascript', 'json', 'go', 'rust' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {

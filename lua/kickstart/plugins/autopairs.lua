@@ -16,7 +16,6 @@ return {
         javascript = { 'template_string' }, -- don't add pairs in javascript template_string treesitter nodes
       },
     }
-
     -- If you want to automatically add `(` after selecting a function or method
     local cmp_autopairs = require 'nvim-autopairs.completion.cmp'
     local cmp = require 'cmp'
