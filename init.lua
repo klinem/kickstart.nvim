@@ -594,6 +594,8 @@ require('lazy').setup({
         tsserver = {},
         --
 
+        astro = {},
+
         -- Go lang
         gopls = {},
 
@@ -682,6 +684,7 @@ require('lazy').setup({
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         cs = { { 'csharpier' } },
+        astro = { { 'prettierd', 'prettier' } },
         javascript = { { 'prettierd', 'prettier' } },
         javascriptreact = { { 'prettierd', 'prettier' } },
         typescript = { { 'prettierd', 'prettier' } },
