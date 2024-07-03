@@ -34,6 +34,8 @@ return {
           enable = true,
           set_jumps = true,
           goto_next_start = {
+            [']a'] = { query = '@paramter.outer', desc = 'Next paramter start' },
+
             [']f'] = { query = '@call.outer', desc = 'Next function call start' },
             [']m'] = { query = '@function.outer', desc = 'Next function/method definition start' },
 

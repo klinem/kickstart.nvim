@@ -45,6 +45,9 @@ return {
       git = {
         ignore = false,
       },
+      update_focused_file = {
+        enable = true,
+      },
     }
 
     vim.keymap.set('n', '<leader>ee', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle File Explorer' })
